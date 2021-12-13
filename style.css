@@ -129,10 +129,18 @@ padding: 10px 15px;
     display: inline-block;
     background-color: blue;
     color: white;
+    border: 2px solid white;
     width: 130px;
     padding: 3px 15px;
     border-radius: 10px;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: 500;
+  }
+  .hero-1 a {
+    width: 130px;
+    padding: 3px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
   }

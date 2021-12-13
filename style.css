@@ -235,3 +235,39 @@ padding: 10px 15px;
 .card img {
   margin: 20px 0 50px 20px;
 }
+.hero-card {
+  padding: 100px 0;
+}
+.hero-card h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+.hero-card img {
+  margin: 0 50px 0 0;
+}
+.card-1 {
+  background-image: url(./images/background.svg);
+width: 544px;
+height: 480px;
+
+font-family: 'Readex Pro', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: white;
+  line-height: 30px;
+ padding-top: 250px;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+.card-1 button {
+  background-color: rgb(87, 137, 230);
+  border-radius: 20px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+}

@@ -120,3 +120,8 @@ padding: 10px 15px;
     height: 150vh;
     padding: 50px 0;
   }
+  .hero-1 h1 {
+    font-family: 'Raleway', sans-serif;
+   font-size: 50px;
+   font-weight: 900;
+  }

@@ -13,3 +13,16 @@ h1 {
   font-size: 61px;
   line-height: 64px;
 }
+span {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+
+  
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  
+  color: #969fac;
+ }

@@ -206,3 +206,16 @@ padding: 10px 15px;
   .hero-2 img {
     transform: translateY(-50px);
    }
+   span {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    color: #969fac;
+   }

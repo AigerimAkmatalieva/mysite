@@ -90,3 +90,25 @@ padding: 10px 15px;
   .hero img {
     padding: 10px 0;
   }
+  @media (min-width:1000px) {
+    .menu-burger {
+      display: block;
+    }
+    .menu-burger {
+      display: none;
+    }
+  }
+  @media (max-width:1000px) {
+    .navbar ul li a {
+      display: block;
+    }
+    .navbar ul li a {
+      display: none;
+    }
+    .navbar ul li a.active {
+      display: block;
+    }
+    .navbar ul li a.active {
+      display: none;
+    }
+  }  

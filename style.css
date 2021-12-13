@@ -303,3 +303,12 @@ font-family: 'Readex Pro', sans-serif;
   font-size: 15px;
   font-weight: 700;
 }
+.hero-7 {
+  padding: 100px 0;
+}
+.hero-7 .img {
+  background-color: lightgray;
+  width: 260px;
+  height: 240px;
+  padding: 50px;
+}

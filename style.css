@@ -273,3 +273,24 @@ font-family: 'Readex Pro', sans-serif;
   text-decoration: none;
   padding: 5px 15px;
 }
+.hero-card-2 {
+  padding: 100px 0;
+}
+.hero-card-2 .card-2 {
+  background-color: rgb(235, 229, 229);
+  width: 630px;
+  height: 382px;
+  padding: 10px 80px 50px 20px;
+}
+.card-2 a {
+ font-family: 'Raleway', sans-serif;
+ font-size: 15px;
+ font-weight: 700;
+ color: blue;
+ text-decoration: none;
+}
+.card-2 div {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+}

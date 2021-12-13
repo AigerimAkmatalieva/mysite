@@ -120,11 +120,6 @@ padding: 10px 15px;
     height: 150vh;
     padding: 50px 0;
   }
-  .hero-1 h1 {
-    font-family: 'Raleway', sans-serif;
-   font-size: 50px;
-   font-weight: 900;
-  }
   .hero-1 a button {
     display: inline-block;
     background-color: blue;

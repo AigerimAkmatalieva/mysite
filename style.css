@@ -294,3 +294,14 @@ font-family: 'Readex Pro', sans-serif;
   font-size: 25px;
   font-weight: 200;
 }
+.hero-6 h1 {
+ padding: 100px 0 0 0;
+}
+.hero-6 p {
+  padding: 145px 0 0 0;
+}
+.hero-6 a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}

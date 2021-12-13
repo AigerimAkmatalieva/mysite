@@ -125,3 +125,14 @@ padding: 10px 15px;
    font-size: 50px;
    font-weight: 900;
   }
+  .hero-1 a button {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    width: 130px;
+    padding: 3px 15px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }

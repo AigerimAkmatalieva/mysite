@@ -141,3 +141,14 @@ padding: 10px 15px;
     font-weight: 700;
     text-decoration: none;
   }
+  .hero-2 h1 {
+    font-family: 'Raleway', sans-serif;
+   font-size: 50px;
+   font-weight: 900;
+  }
+  .hero-2 a {
+    width: 130px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }

@@ -1,17 +1,17 @@
 body {
   margin: 0;
-  font-family: 'Readex Pro', sans-serif;
+  font-family: "Readex Pro", sans-serif;
 }
 * {
   box-sizing: border-box;
 }
 .row {
   display: flex;
-  margin: 0 -.5rem;
-  gap: .5rem;
+  margin: 0 -0.5rem;
+  gap: 0.5rem;
 }
 [class^="col"] {
-  padding: 0 -.5rem;
+  padding: 0 -0.5rem;
 }
 .col {
   flex: 1 0 0;
@@ -61,44 +61,46 @@ body {
   flex: 0 0 100%;
 }
 .container {
-  max-width: 1100px;
- margin: 0 auto;
- padding: 0 15px;
+  max-width: 1046px;
+  margin: 0 auto;
+  padding: 0 15px;
+  flex-wrap: wrap;
 }
 .navbar {
-  font-family: 'Readex Pro', sans-serif;
+  font-family: "Readex Pro", sans-serif;
   padding: 20px 0;
 }
 .navbar nav {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-   border: 2px solid transparent;
+  border: 2px solid transparent;
 }
 .navbar ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
- }
- .navbar ul li {
+}
+.navbar ul li {
   display: inline;
- }
- .navbar ul li a {
+}
+.navbar ul li a {
   color: rgb(10, 10, 58);
-text-decoration: none;
-font-family: 'Readex Pro', sans-serif;
-font-size: 17px;
-font-weight: 300;
+  text-decoration: none;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
 
-display: inline-block;
-padding: 10px 15px;
+  display: inline-block;
+  padding: 10px 15px;
+  flex-wrap: wrap;
 }
 .navbar .active {
   display: inline-block;
   background-color: blue;
   color: white;
   padding: 10px 15px;
-  border: 1px solid blue ;
+  border: 1px solid blue;
   border-radius: 20px;
 }
 .menu-burger {
@@ -106,115 +108,149 @@ padding: 10px 15px;
   position: relative;
   width: 30px;
   height: 20px;
- margin: 12px 0 0 0;
+}
+.menu-burger::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+}
+.menu-burger::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+.menu-burger::before {
+  top: 0;
+}
+.menu-burger::after {
+  bottom: 0;
+}
+.menu-burger span {
+  position: absolute;
+  background-color: black;
+
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 9px;
+  height: 2px;
+}
+@media (min-width: 975px) {
+  .menu-burger {
+    display: block;
   }
-  .menu-burger::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-  } 
-  .menu-burger::after {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    left: 0;
+  .menu-burger {
+    display: none;
   }
-  .menu-burger::before {
-    top: 0;
+}
+@media (max-width: 975px) {
+  .navbar ul li a {
+    display: block;
   }
-  .menu-burger::after {
-    bottom: 0;
+  .navbar ul li a {
+    display: none;
   }
-  .menu-burger span {
-    position: absolute;
-    background-color: black;
-  
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 9px;
-    height: 3px;
+  .navbar ul li a.active {
+    display: block;
   }
-  .hero {
-    box-shadow: 0 2px 2px rgba(99, 97, 97, 0.521);
+  .navbar ul li a.active {
+    display: none;
   }
-  .hero img {
-    padding: 10px 0;
-  }
-  @media (min-width:1000px) {
-    .menu-burger {
-      display: block;
-    }
-    .menu-burger {
-      display: none;
-    }
-  }
-  @media (max-width:1000px) {
-    .navbar ul li a {
-      display: block;
-    }
-    .navbar ul li a {
-      display: none;
-    }
-    .navbar ul li a.active {
-      display: block;
-    }
-    .navbar ul li a.active {
-      display: none;
-    }
-  }  
-  .hero-1 {
-    background-image: url(./images/Frame2.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 150vh;
-    padding: 50px 0;
-  }
-  .hero-1 a button {
-    display: inline-block;
-    background-color: blue;
-    color: white;
-    border: 2px solid white;
-    width: 130px;
-    padding: 3px 15px;
-    border-radius: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .hero-1 a {
-    color: blue;
-    width: 130px;
-    padding: 3px 15px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .hero-2 {
-    display: inline-block;
-    padding: 100px 0 0 0;
-  }
-  .hero-2 a {
-    color: blue;
-    width: 130px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-  }
-  .hero-2 img {
-    transform: translateY(-50px);
-   }
- .hero-3 {
-   padding: 100px 0;
-   line-height: 30px;
- }
- .hero-4 img {
+}
+.hero {
+  box-shadow: 0 2px 2px rgba(99, 97, 97, 0.521);
+}
+.hero img {
+  padding: 10px 0;
+}
+.container-2 {
+  max-width: 1046px;
+  margin: 0 auto;
+}
+.hero-1 {
+  background-image: url(./images/Frame2.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150vh;
+}
+.hero-1 a button {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  border: 2px solid white;
+  width: 130px;
+  padding: 3px 15px;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.hero-1 a {
+  color: blue;
+  width: 130px;
+  padding: 3px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1046px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hero-2 a {
+  color: blue;
+  max-width: 130px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+.hero-2 img {
+  transform: translateY(50px);
+}
+.hero-2 {
+  flex: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.hero-2 h1 {
+  text-align: left;
+}
+.hero-2 p {
+  text-align: left;
+}
+.img .hero-2 img {
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  float: left;
+  display: block;
+}
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1046px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hero-3 {
+  padding: 100px 0;
+  line-height: 30px;
+}
+.hero-4 img {
   padding: 150px 0;
   margin: 0 125px 0 0;
 }
@@ -232,32 +268,40 @@ padding: 10px 15px;
   padding: 20px 20px;
   border-radius: 10px;
 }
+.card-3 {
+  background-color: rgb(243, 243, 243);
+  width: 330px;
+  height: 350px;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
 .card img {
   margin: 20px 0 50px 20px;
 }
+
 .hero-card {
   padding: 100px 0;
 }
 .hero-card h1 {
   display: flex;
   align-items: center;
- text-align: center;
+  text-align: center;
 }
 .hero-card img {
   margin: 0 50px 0 0;
 }
 .card-1 {
-background-image: url(./images/background.svg);
-width: 544px;
-height: 480px;
+  background-image: url(./images/background.svg);
+  width: 544px;
+  height: 480px;
 
-font-family: 'Readex Pro', sans-serif;
+  font-family: "Readex Pro", sans-serif;
   font-size: 17px;
   font-weight: 300;
   line-height: 30px;
   padding-top: 250px;
- padding-left: 20px;
- padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .card-1 p {
   color: white;
@@ -266,7 +310,7 @@ font-family: 'Readex Pro', sans-serif;
   background-color: rgb(87, 137, 230);
   border-radius: 20px;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 200;
   color: white;
@@ -283,14 +327,14 @@ font-family: 'Readex Pro', sans-serif;
   padding: 10px 80px 50px 20px;
 }
 .card-2 a {
- font-family: 'Raleway', sans-serif;
- font-size: 15px;
- font-weight: 700;
- color: blue;
- text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: blue;
+  text-decoration: none;
 }
 .card-2 div {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 25px;
   font-weight: 200;
 }
@@ -299,7 +343,7 @@ font-family: 'Readex Pro', sans-serif;
 }
 .hero-6 a {
   color: blue;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 700;
 }
@@ -311,4 +355,67 @@ font-family: 'Readex Pro', sans-serif;
   width: 260px;
   height: 240px;
   padding: 60px;
+}
+.hero-8 {
+  display: flex;
+}
+.card-4 {
+  width: 800px;
+  height: 450px;
+  background-color: rgb(29, 29, 122);
+  padding: 80px 250px 80px 250px;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+.card-5 {
+  width: 800px;
+  height: 450px;
+  background-color: lightblue;
+  padding: 200px 50px;
+}
+.card-5 a {
+  padding: 3px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+.card-5 a button {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  width: 170px;
+  padding: 3px 15px;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.wrapper {
+  padding: 100px 100px;
+  line-height: 35px;
+}
+.wrapper .h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+.wrapper ul li {
+  color: rgb(10, 10, 58);
+  text-decoration: none;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  list-style: none;
+}
+.wrapper img {
+  padding: 25px 0;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(44px + (17px + 17px * 0.7) * (100vw / 1046));
+    font-size: calc(44px + (17 + 17 * 0.7) * ((100vw - 320px) / 1200));
+  }
+
 }
